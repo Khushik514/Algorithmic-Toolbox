@@ -31,7 +31,6 @@ def last_digit_of_the_sum_of_fibonacci_numbers_again(from_index, to_index):
     elif n==1:
         sum1=1
     for i in range(n-1):
-        print(previous,current)
         previous, current = current%10, (previous + current)%10
         sum1+=current
     m = m % pisano_period
